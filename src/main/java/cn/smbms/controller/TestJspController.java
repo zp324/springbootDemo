@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestJspController {
 	@RequestMapping("/hello")
 	public String hello() {
-		System.out.println("======hello=====");
+		System.out.println("======hello1111=====");
 		return "hello";
 	}
 }
