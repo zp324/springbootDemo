@@ -1,0 +1,17 @@
+server:
+  port: 8888
+  context-path: /springbootDemo
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://127.0.0.1:3306/smbms?useUnicode=true&characterEncoding=utf-8&useSSL=false
+mybatis:
+  mapper-locations:
+  - classpath:cn.smbms.dao/*.xml
+  type-aliases-package: cn.smbms.pojo
